@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Coding Challenge 2_2</string>
+    <string name="textView_empty">-</string>
+    <string name="add_new">Add new</string>
+</resources>
