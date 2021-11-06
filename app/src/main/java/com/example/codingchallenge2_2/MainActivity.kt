@@ -2,8 +2,11 @@ package com.example.codingchallenge2_2
 
 import android.app.Activity
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.view.View
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
@@ -45,6 +48,17 @@ class MainActivity : AppCompatActivity() {
         button_add.setOnClickListener {
             val intent = Intent(this, SecondActivity::class.java)
             resultLauncher.launch(intent)
+        }
+    }
+
+    fun findLocation(view: View) {
+        val uri_loc = Uri.parse("geo:0,0?q=" + editText_shop_name.text.toString())
+        val new_intent = Intent(Intent.ACTION_VIEW, uri_loc)
+
+        if (new_intent.resolveActivity(packageManager) != null) {
+            startActivity(new_intent)
+        } else {
+            Log.d("ImplicitIntents", "Can't handle this intent!")
         }
     }
 }

@@ -19,6 +19,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <EditText
+            android:id="@+id/editText_shop_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/edit_text_hint"/>
+
+        <Button
+            android:id="@+id/button_find_location"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/button_find_location"
+            android:onClick="findLocation"/>
+
         <TextView
             android:id="@+id/textView1"
             android:layout_width="match_parent"

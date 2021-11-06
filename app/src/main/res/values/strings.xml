@@ -2,4 +2,6 @@
     <string name="app_name">Coding Challenge 2_2</string>
     <string name="textView_empty">-</string>
     <string name="add_new">Add new</string>
+    <string name="edit_text_hint">Please, write the name of the shop</string>
+    <string name="button_find_location">Find location of the shop</string>
 </resources>
